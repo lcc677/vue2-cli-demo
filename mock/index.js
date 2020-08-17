@@ -43,6 +43,7 @@ export function mockXHR() {
   }
 
   for (const i of mocks) {
+    console.log(i)
     Mock.mock(new RegExp(i.url), i.type || 'get', XHR2ExpressReqWrap(i.response))
   }
 }

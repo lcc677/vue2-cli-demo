@@ -1,7 +1,6 @@
 'use strict'
 const port = 9528
 module.exports = {
-  productionSourceMap: false,
   devServer: {
     port: port,
     open: true,
@@ -22,5 +21,5 @@ module.exports = {
     },
     before: require('./mock/mock-server.js')
   },
-
+  
 }
